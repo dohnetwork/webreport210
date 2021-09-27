@@ -1,3 +1,8 @@
+#FROM php:7.2-apache ตัวRun Report ได้
+#RUN docker-php-ext-install mysqli
+#cd /tmp && curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
+
+
 FROM ubuntu:18.04
 
 ENV DEBIAN_FRONTEND=noninteractive
