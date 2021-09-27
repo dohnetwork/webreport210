@@ -36,8 +36,8 @@ RUN apt-get update && apt-get install -yq --no-install-recommends \
     locales \
     sqlite3 \
     ca-certificates \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
-rm -rf /var/lib/apt/lists/* && \
+    && apt-get clean && rm -rf /var/lib/apt/lists/* 
+     
 
 RUN mkdir -p /var/www/html/
 RUN chown -R www-data:www-data /var/www/html 
